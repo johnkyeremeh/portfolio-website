@@ -28,6 +28,10 @@ body {
 	line-height: 1;
 }
 
+.about-me-more{
+	color: white;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -3252,7 +3256,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #fe914d;
+			
 		}
 
 		.wrapper.style3-alt {
