@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruta Health Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="title">John Kyeremeh</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="inner">
+          <h1 class="major">Ruta Health Portfolio</h1>
+          <div class="image-gallery">
+            <div class="image-item">
+              <img
+                src="images/ruta-1.png"
+                alt="About Ruta Health 1"
+                data-index="0"
+                class="thumbnail-image"
+              />
+            </div>
+            <div class="image-item">
+              <img
+                src="images/ruta-2.png"
+                alt="About Ruta Health 2"
+                data-index="1"
+                class="thumbnail-image"
+              />
+            </div>
+            <div class="image-item">
+              <img
+                src="images/ruta-3.png"
+                alt="About Ruta Health 3"
+                data-index="2"
+                class="thumbnail-image"
+              />
+            </div>
+          </div>
+
+          <div class="lightbox" id="lightbox">
+            <span class="close-button" id="close-button">&times;</span>
+            <div class="lightbox-content" id="lightbox-content">
+              <img src="" alt="Lightbox Image" id="lightbox-image" />
+            </div>
+          </div>
+
+          <h2>About</h2>
+          <p>
+            I'm proud to present my work on the Ruta Health software system, a
+            health management tool that connects patients to doctors. This
+            project was developed using Ruby on Rails, Tailwind CSS, and hosted
+            on Heroku. It resulted in a significant impact on patient engagement
+            and satisfaction, with a 50% increase.
+          </p>
+
+          <h2>Ruta Health Reviews</h2>
+          <p>
+            Ruta Health received positive feedback on Product Hunt,
+            demonstrating its success and popularity:
+          </p>
+          <ul>
+            <li>
+              Rated 5/5 based on 7 reviews on
+              <a
+                href="https://www.producthunt.com/products/ruta-health/launches"
+                target="_blank"
+                >Product Hunt</a
+              >.
+            </li>
+            <li>
+              Received 249 upvotes, ranking as one of the top 10 products for
+              the day.
+            </li>
+          </ul>
+
+          <h2>Onboarding Video Walkthrough</h2>
+
+          <a
+            href="https://share.vidyard.com/watch/DQVg5nQFvXbPwXk2ZH2KGj?"
+            target="_blank"
+            class="button"
+            >Watch Video</a
+          >
+          <br />
+          <br />
+
+          <h2>My Contributions</h2>
+          <ul>
+            <li>
+              Developed and maintained a health software system that linked
+              patients to doctors using Ruby on Rails, Tailwind CSS, and Heroku
+              resulting in a 50% increase in patient engagement and
+              satisfaction.
+            </li>
+            <li>
+              Collaborated with a team of developers and product managers to
+              integrate new features into the app, ensuring high-quality code
+              and adherence to best practices and coding standards.
+            </li>
+            <li>
+              Architected and implemented automated test suites using RSpec to
+              ensure that the app functioned as expected, resulting in a 40%
+              reduction in bugs and a 25% increase in code maintainability.
+            </li>
+            <li>
+              Debugged the app, fixing issues related to the front-end,
+              back-end, and database layers, and implemented scalable solutions
+              to improve the app's performance and stability.
+            </li>
+            <li>
+              Conducted quality assurance testing on the app to ensure that it
+              met customer and regulatory requirements, resulting in a 70%
+              reduction in customer-reported issues and improved compliance with
+              industry standards.
+            </li>
+            <li>
+              Admin panel created with Administrate, a Rails engine that helps
+              you put together a super-flexible admin dashboard.
+            </li>
+          </ul>
+
+          <h2>Security Measures</h2>
+          <ul>
+            <li>
+              Utilized Rails' built-in Cross-Site Scripting (XSS) protection by
+              escaping user-generated content and ensuring it's properly
+              sanitized before rendering in views.
+            </li>
+            <li>
+              Implemented Rails' built-in CSRF protection to generate unique
+              tokens for each form and validate them on submission.
+            </li>
+            <li>
+              Utilized the Devise gem for user authentication, which provides a
+              secure and customizable authentication solution.
+            </li>
+            <li>
+              Validated user input on both the client and server sides to
+              prevent SQL injection attacks.
+            </li>
+            <li>
+              Employed bcrypt for secure password hashing and storage, following
+              Rails conventions.
+            </li>
+            <li>
+              Configured Rails' built-in session management securely, using
+              secure cookies and proper expiration settings.
+            </li>
+            <li>
+              Conducted regular security audits and vulnerability assessments
+              using tools like Brakeman or bundler-audit to identify and address
+              potential security issues in gems and code.
+            </li>
+            <li>
+              Kept all dependencies, including gems and the Ruby on Rails
+              framework, up-to-date to mitigate known security vulnerabilities.
+            </li>
+          </ul>
+
+          <h2>Amazon S3 for Photo and Data Storage</h2>
+          <p>
+            For efficient and secure photo and data storage, I integrated Amazon
+            S3 into the Ruta Health application. Here's how I leveraged this
+            service:
+          </p>
+          <ul>
+            <li>
+              Utilized the 'aws-sdk' gem to interact with Amazon S3
+              programmatically from within the Rails application.
+            </li>
+            <li>
+              Implemented models and functions to handle user profile picture
+              uploads, securely storing images on Amazon S3, and retrieving them
+              when needed.
+            </li>
+            <li>
+              Utilized Amazon S3's access control features to ensure that only
+              authorized users could access and modify their own data.
+            </li>
+            <li>
+              Enabled versioning and data lifecycle policies to efficiently
+              manage and retain data while optimizing costs.
+            </li>
+          </ul>
+
+          <h2>Updated Landing Page for Product Launch</h2>
+          <p>
+            As part of my role as a software engineer, I took the initiative to
+            update and enhance our project's landing page to reflect our latest
+            achievements and offerings. Here's how I contributed to this
+            improvement:
+          </p>
+          <ul>
+            <li>
+              Collaborated with the design and marketing teams to create a
+              visually appealing and informative landing page that effectively
+              communicated our product's value proposition.
+            </li>
+            <li>
+              Implemented responsive web design principles to ensure that the
+              landing page was optimized for various devices, including
+              desktops, tablets, and mobile phones.
+            </li>
+            <li>
+              Utilized modern front-end technologies such as ReactJS and CSS
+              Grid to enhance the user experience and make the page more
+              interactive and engaging.
+            </li>
+            <li>
+              Integrated analytics and tracking tools to monitor user behavior
+              and gather insights, allowing us to make data-driven decisions for
+              further improvements.
+            </li>
+            <li>
+              Optimized page load times by compressing images and minimizing
+              HTTP requests, resulting in a 20% increase in conversion rates.
+            </li>
+            <li>
+              Implemented A/B testing to experiment with different page elements
+              and content variations, leading to a 15% improvement in user
+              engagement metrics.
+            </li>
+            <li>
+              Regularly updated the landing page with the latest product
+              features, testimonials, and success stories to keep it relevant
+              and appealing to our target audience.
+            </li>
+          </ul>
+
+          <h2>Technologies Used</h2>
+          <div class="SkillIcons__Wrapper-sc-4rkrxf-0 bMIVPH">
+            <ul
+              class="components__Tags-akgmo8-6 SkillIcons__AllTags-sc-4rkrxf-1 fIXXpZ dTyTDJ"
+            >
+              <li>Ruby on Rails</li>
+              <li>Tailwind CSS</li>
+              <li>Heroku</li>
+              <li>RSpec</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Amazon S3</li>
+            </ul>
+          </div>
+
+          <!-- Other points showcasing your skills -->
+          <h2>Additional Achievements</h2>
+          <ul>
+            <li>
+              Conducted code reviews and mentored junior developers, fostering a
+              collaborative and learning-oriented team culture.
+            </li>
+          </ul>
+
+          <!-- GitHub links and other sections -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; John Kyeremeh. All rights reserved.</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+  </body>
+</html>

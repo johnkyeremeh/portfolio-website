@@ -3964,6 +3964,110 @@ input, select, textarea {
 .fzxvze {
     font-size: 2rem;
 }
+.image-container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 5px; 
+    flex-wrap: wrap; 
+}.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.thumbnail-image {
+    max-width: 100%; /* Adjust this to your desired thumbnail width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+.image-item {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width as needed (33.33% for three images) */
+    margin-bottom: 20px; /* Add some spacing between images */
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .image-item {
+        flex: 0 0 100%;
+    }
+}
+
+
+/* Styles for the lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 70vh;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
 
 
 
+
+
+
+/* Style anchor links */
+a {
+    color: #f6b448; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+/* Hover effect for anchor links */
+a:hover {
+    color: #fe914d; 
+    text-decoration: none; 
+}
+
+
+.project-label {
+	display: inline-block;
+	background-color: #f6b448; 
+	padding: 5px 10px;
+	border-radius: 20px; 
+	margin-bottom: 10px;
+  }
+  
+  .project-category {
+	font-size: 16px;
+	color: #fff;
+  }
+  
