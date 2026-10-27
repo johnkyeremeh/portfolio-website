@@ -908,6 +908,9 @@ button:focus-visible,
 
 /* ─────────────────────────── CTA + footer ─────────────────────────── */
 .cta {
+  /* Positioned so it paints above the fixed #constellation canvas;
+     static blocks paint underneath it and disappear. */
+  position: relative;
   padding: 80px 24px 96px;
   text-align: center;
   display: flex;
@@ -947,6 +950,7 @@ button:focus-visible,
 }
 
 .colophon {
+  position: relative;
   border-top: 1px solid var(--rule);
   padding: 40px 48px;
   display: flex;
