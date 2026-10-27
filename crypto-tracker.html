@@ -17,9 +17,8 @@
 
 <div class="nav-shell">
   <nav class="nav" aria-label="Page">
-    <a class="brand" href="index.html">John Kyeremeh</a>
+    <a class="brand" href="index.html" aria-label="John Kyeremeh, home">John Kyeremeh</a>
     <span class="links">
-      <a href="index.html">Home</a>
       <a href="work.html#work">Work</a>
       <a href="work.html#track-record">Track record</a>
       <a href="work.html#contact">Contact</a>
@@ -38,7 +37,7 @@
         <img src="images/cryptocurrency_tracker-header.png" alt="">
       </figure>
       <p class="label">// About</p>
-      <p>A simple and handy tool for crypto currency investors to track the price, marketcap, and predict possible future price of the top 10 crypto currency.</p>
+      <p>A tool for crypto investors to track the price and market cap of the top 10 cryptocurrencies and estimate future prices.</p>
       <p class="label">// Stack</p>
       <ul class="tag-list">
         <li>JavaScript</li>
@@ -63,20 +62,20 @@
         <figure class="shot">
           <img src="images/cryptocurrency_tracker.png" alt="" style="width: 50%; height: auto;">
         </figure>
-        <p>I wanted to build a responsive web application that displays real-time data of the top 10 cryptocurrencies using the coinmarket cap API.</p>
+        <p>I wanted to build a responsive web app that shows live data for the top 10 cryptocurrencies from the CoinMarketCap API.</p>
       </div>
       <div class="d-section">
         <h3>Web Stack and Explanation</h3>
         <p>
           <h5>Backend</h5>
-          For the backend, I chose to use Express, a simple and fast Node.js web framework, to fetch data from the CoinMarketCap API. I also used Axios, a promise-based HTTP client, to make HTTP requests to the API. The backend was implemented in a separate folder named "backend" inside the root folder of the project.
+          For the backend, I chose to use Express to fetch data from the CoinMarketCap API. I also used Axios for the HTTP requests. The backend was implemented in a separate folder named "backend" inside the root folder of the project.
           <h5>Frontend</h5>
-          Frontend: The frontend was built with Create React App, a popular and widely-used tool for building React applications. React is a JavaScript library for building user interfaces, and is known for its fast rendering speed and ability to handle complex UI components. For styling, I used Bootstrap, a popular CSS framework, to quickly build responsive and mobile-friendly UI components.
+          The frontend is a Create React App project styled with Bootstrap for responsive components.
         </p>
       </div>
       <div class="d-section">
         <h3>Problems and Thought Process</h3>
-        <p>One of the main challenges I faced during the development of this project was handling the real-time data updates. I decided to implement a polling mechanism that fetches new data from the CoinMarketCap API every 5 minutes, and updates the UI accordingly. This was done using a setInterval function in the frontend that calls a function to fetch data from the backend API. Another challenge I faced was handling the large amount of data returned by the CoinMarketCap API. I needed to extract the relevant data for each cryptocurrency and display it in a clear and concise way. To accomplish this, I used various React components to render the data. Overall, the development of this project was a great learning experience for me, and I was able to create a functional and useful tool for tracking the performance of cryptocurrencies in real-time.</p>
+        <p>Keeping the data current was the first problem. The frontend uses setInterval to poll the backend every 5 minutes, and the backend fetches fresh data from the CoinMarketCap API. The API also returns far more than the page needs, so I pull out the fields for each cryptocurrency and render them with React components.</p>
       </div>
     </div>
     <nav class="detail-nav" aria-label="More">

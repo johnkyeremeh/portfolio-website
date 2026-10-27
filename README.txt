@@ -73,6 +73,16 @@ Images        Drop a file in assets/img/work/ and point an <img src> at it.
               Case covers are CSS colour blocks (.cover--arternal and
               friends), not screenshots, so they cost nothing to load.
 
+Hero cards    The four floating cards on the home page are home-page
+              screenshots of ARTERNAL, Optiwatt and Clarity Inbox
+              (assets/img/home/), plus the Obie Slack product shot from the
+              500 Startups deck. Each card links to its case at
+              work.html?project=<slug>. To refresh a screenshot, capture the
+              live site at 1600x900 and resize:
+
+                sips --resampleWidth 1200 -s format jpeg -s formatOptions 82 \
+                  shot.png --out assets/img/home/arternal.jpg
+
 Portrait      images/john-kyeremeh.jpg fills the About card on the home page.
               It is currently the GitHub profile picture (460x460). Replace
               that one file with a larger headshot when you have one: the card
