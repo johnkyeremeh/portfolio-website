@@ -1,89 +1,83 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Mini CRM + Landing Page Tracking Tool</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' fill='%23fff' text-anchor='middle'%3EJK%3C/text%3E%3C/svg%3E" />
+  <title>Mini CRM · John Kyeremeh</title>
+  <meta name="description" content="A small Rails CRM that links a visitor's movements across pages and platforms into one record." />
+  <meta name="author" content="John Kyeremeh" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/work.css" />
+</head>
+<body>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">John Kyeremeh</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-					</ul>
-				</nav>
-			</header>
+<div class="nav-shell">
+  <nav class="nav" aria-label="Page">
+    <a class="brand" href="index.html">John Kyeremeh</a>
+    <span class="links">
+      <a href="index.html">Home</a>
+      <a href="work.html#work">Work</a>
+      <a href="work.html#track-record">Track record</a>
+      <a href="work.html#contact">Contact</a>
+    </span>
+    <a class="cta" href="mailto:john.a.kyeremeh@gmail.com">Get in touch <span>↗</span></a>
+  </nav>
+</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<div class="wrap">
+  <article class="detail project">
+    <a class="back-link" href="work.html#earlier-work">&larr; All work</a>
+    <p class="label">// Side project, featured</p>
+    <h1>Mini CRM</h1>
+    <div class="inner">
+      <figure class="shot">
+        <img src="images/mvp-crm-hero.png" alt="">
+      </figure>
+      <p class="label">// About</p>
+      <p>Micro CRM with marketing identity managing feature. identity management system offers the ability to link visitor's movements across different platforms, giving a holistic view of the user journey.</p>
+      <p class="label">// Stack</p>
+      <ul class="tag-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Ruby on Rails</li>
+        <li>PostgreSQL</li>
+        <li>SQL</li>
+      </ul>
+      <p class="label">// GitHub Links</p>
+      <a href="https://github.com/johnkyeremeh/mini-crm" target="_blank" class="deck-btn">Github</a>
+      <p class="label">// Video Walkthrough</p>
+      <a href="https://share.vidyard.com/watch/zjm2VeKXL4CKkJ3tTpysYR?" target="_blank" class="deck-btn">Watch Video</a>
+      <div class="d-section">
+        <h3>Project Details</h3>
+        <figure class="shot">
+          <img src="images/mvp-crm-feed.png" alt="">
+        </figure>
+        <p>I wanted to build a Ruby on Rails app with MVC architecture and data modeling.</p>
+      </div>
+      <div class="d-section">
+        <h3>Web Stack and Explanation</h3>
+        <p>Build the application using Ruby on Rails. Managed related data through complex forms and RESTful routes. The goal of the application is to build an application with typical "Content Management System" domain model.</p>
+      </div>
+      <div class="d-section">
+        <h3>Problems and Thought Process</h3>
+        <p>When a Contact visits a page and the tracking occurs in development the feed of the Contact persists however in production it had issues persisting so the feed would be empty. This was mainly due to Ahoy Gem that was used. Next version would be move from Ahoy to another gem for tracking with same functionality.</p>
+      </div>
+    </div>
+    <nav class="detail-nav" aria-label="More">
+      <a href="work.html#earlier-work">&larr; All work</a>
+      <a class="next" href="index.html#contact">Get in touch &rarr;</a>
+    </nav>
+  </article>
+</div>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Mini CRM + Landing Page Tracking Tool</h1>
-							<span class="image fit"><img src="images/mvp-crm-hero.png" alt="" /></span>
-                            <h2>About</h2>
-							<p>Micro CRM with marketing Identity managing feature. identity management system offers the ability to link visitor’ movements across different platforms, giving a holistic view of the user journey. </p>
-						
-                            <h2>Stack</h2>
-							<div class="SkillIcons__Wrapper-sc-4rkrxf-0 bMIVPH">
-								<ul class="components__Tags-akgmo8-6 SkillIcons__AllTags-sc-4rkrxf-1 fIXXpZ dTyTDJ">
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>Ruby on Rails</li>
-									<li>PostgreSQL</li>
-									<li>SQL</li>
-							</div>
-                            <h2>GitHub Links</h2>
-								<a href="https://github.com/johnkyeremeh/mini-crm" target="_blank" class="button">Github</a>
-								<br>
-								<br>
-								<h2>Video Walkthrough</h2>
+<footer>
+  <span>John Kyeremeh, Work</span>
+  <span>White Rock, BC</span>
+</footer>
 
-							<a href="https://share.vidyard.com/watch/zjm2VeKXL4CKkJ3tTpysYR?" target="_blank" class="button">Watch Video</a>
-							<br>
-							<br>
-                            <div class="project-details">
-                                <h3 class="major">Project Details</h3>
-                                <span class="image fit"><img src="images/mvp-crm-feed.png" alt="" /></span>
-								<p>I wanted to build a Ruby on Rails app with MVC architecture and data modeling.</p>
-                            </div>
-                            <div class="project-details">
-                                <h3 class="major">Web Stack and Explanation</h3>
-                                <p>Build the application using Ruby on Rails. Managed related data through complex forms and RESTful routes. The goal of the application is to build an application with typical "Content Management System" domain model.
-								</p>
-                            </div>
-                            <div class="project-details">
-                                <h3 class="major">Problems and Thought Process</h3>
-                                <p>When a Contact visits a page and the tracking occurs in development the feed of the Contact persists however in production it had issues persisting so the feed would be empty. This was mainly due to Ahoy Gem that was used. Next version would be move from Ahoy to another gem for tracking with same functionality. </p>
-                            </div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; John Kyeremeh. All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
