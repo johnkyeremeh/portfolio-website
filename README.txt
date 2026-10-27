@@ -73,9 +73,12 @@ Images        Drop a file in assets/img/work/ and point an <img src> at it.
               Case covers are CSS colour blocks (.cover--arternal and
               friends), not screenshots, so they cost nothing to load.
 
-Portrait      Drop a photo at images/john-kyeremeh.jpg and it fills the About
-              card on the home page. Until that file exists site.js removes
-              the element and the JK monogram stands in.
+Portrait      images/john-kyeremeh.jpg fills the About card on the home page.
+              It is currently the GitHub profile picture (460x460). Replace
+              that one file with a larger headshot when you have one: the card
+              renders it about 340x425 with object-fit: cover. If the file is
+              missing, site.js removes the element and the JK monogram stands
+              in, so a broken path never shows a broken image.
 
 Project pages The eight project pages share work.css and the same shell: nav,
               .detail wrapper, .d-section labels, .tag-list for the stack and
